@@ -17,9 +17,9 @@ import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import EcommerceProject.PageObjects.LandingPage;
+
 import EcommerceProject.PageObjects.LumaEcommerceLandingPage;
-import EcommerceProject.PageObjects.ParaBankLandingPage;
+
 
 public class baseTest {
 	
