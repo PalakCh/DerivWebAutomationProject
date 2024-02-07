@@ -1,0 +1,9 @@
+LearnFramework2\PageObjects\LandingPage.class
+LearnFramework2\PageObjects\CatalogPage.class
+LearnFramework2\PageObjects\CheckoutPage.class
+LearnFramework2\resources\extentreporterNG.class
+LearnFramework2\AbstractComponents\AbstractComponents.class
+LearnFramework2\PageObjects\App.class
+LearnFramework2\PageObjects\OrdersPage.class
+LearnFramework2\PageObjects\ConfirmationPage.class
+LearnFramework2\PageObjects\CartPage.class
