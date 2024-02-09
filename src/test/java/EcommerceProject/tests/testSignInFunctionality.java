@@ -29,7 +29,6 @@ public class testSignInFunctionality extends baseTest{
 		clp.enterpassword("dfbjsbkfd");
 		clp.signIn();
 		clp.validateIncorrectSignInMessage();
-		
 	}
 	
 	@Test
@@ -40,7 +39,6 @@ public class testSignInFunctionality extends baseTest{
 		clp.enterpassword(getPropertyValue("password"));
 		LumaEcommerceHomePage hp=clp.signIn();
 		hp.ValidateuserloggedIn();
-		hp.signOut();
-		
+		hp.signOut();	
 	}
 }
