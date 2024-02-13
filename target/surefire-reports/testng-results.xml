@@ -1,147 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-17T04:14:32 EST" name="Surefire suite" finished-at="2024-01-17T04:14:40 EST" duration-ms="8244">
+  <suite started-at="2024-02-12T05:59:25 EST" name="Suite" finished-at="2024-02-12T06:00:21 EST" duration-ms="55810">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@341b80b2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-01-17T04:14:32 EST" name="Surefire test" finished-at="2024-01-17T04:14:40 EST" duration-ms="8244">
-      <class name="Cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGTestRunner@341b80b2]" started-at="2024-01-17T04:14:32 EST" name="setUpClass" finished-at="2024-01-17T04:14:32 EST" duration-ms="553" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2776015d]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-02-12T05:59:25 EST" name="Test" finished-at="2024-02-12T06:00:21 EST" duration-ms="55810">
+      <class name="EcommerceProject.tests.TestCreateNewCustomerAcc">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T05:59:25 EST" name="launchApplication" finished-at="2024-02-12T05:59:37 EST" duration-ms="11390" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@341b80b2]" started-at="2024-01-17T04:14:32 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-17T04:14:37 EST" duration-ms="4230" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive test of submitting order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the item from ecommerce website"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Build info: version: '4.16.0', revision: '15400459dd*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cdb79d6804ec1669a2d97273fb268465, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61217/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cdb79d6804ec1669a2d97273fb268465]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Build info: version: '4.16.0', revision: '15400459dd*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cdb79d6804ec1669a2d97273fb268465, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61217}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61217/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cdb79d6804ec1669a2d97273fb268465
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1039)
-at LearnFramework2.PageObjects.LandingPage.goTo(LandingPage.java:51)
-at LearnFramework2.testcomponents.baseTest.launchApplication(baseTest.java:64)
-at StepDefinitions.StepDefinitionImpl.I_landed_on_Ecommerce_website(StepDefinitionImpl.java:30)
-at ✽.I landed on Ecommerce website(file:///G:/eclipse-workspace/LearnFramework2/src/test/java/cucumber/Ecommerce.feature:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createAccWithAllFieldsCorrectlyTestCase04()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T05:59:37 EST" name="createAccWithAllFieldsCorrectlyTestCase04" finished-at="2024-02-12T05:59:42 EST" duration-ms="5229" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@341b80b2]" started-at="2024-01-17T04:14:37 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-17T04:14:40 EST" duration-ms="3299" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Negative test for credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Error Validation"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Build info: version: '4.16.0', revision: '15400459dd*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61350ae7883032666d74091cee48cd04, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61235/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 61350ae7883032666d74091cee48cd04]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Build info: version: '4.16.0', revision: '15400459dd*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61350ae7883032666d74091cee48cd04, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61235/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 61350ae7883032666d74091cee48cd04
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1039)
-at LearnFramework2.PageObjects.LandingPage.goTo(LandingPage.java:51)
-at LearnFramework2.testcomponents.baseTest.launchApplication(baseTest.java:64)
-at StepDefinitions.StepDefinitionImpl.I_landed_on_Ecommerce_website(StepDefinitionImpl.java:30)
-at ✽.I landed on Ecommerce website(file:///G:/eclipse-workspace/LearnFramework2/src/test/java/cucumber/ErrorValidation.feature:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        </test-method> <!-- createAccWithAllFieldsCorrectlyTestCase04 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T05:59:42 EST" name="closeDriver" finished-at="2024-02-12T05:59:42 EST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@341b80b2]" started-at="2024-01-17T04:14:40 EST" name="tearDownClass" finished-at="2024-01-17T04:14:40 EST" duration-ms="80" status="PASS">
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T05:59:42 EST" name="launchApplication" finished-at="2024-02-12T05:59:51 EST" duration-ms="8592" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Cucumber.TestNGTestRunner -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createAccWithAlreadyUsedEmailIdTestCase03()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T05:59:51 EST" name="createAccWithAlreadyUsedEmailIdTestCase03" finished-at="2024-02-12T05:59:55 EST" duration-ms="3927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccWithAlreadyUsedEmailIdTestCase03 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T05:59:55 EST" name="closeDriver" finished-at="2024-02-12T05:59:55 EST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T05:59:55 EST" name="launchApplication" finished-at="2024-02-12T06:00:06 EST" duration-ms="11379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createAccWithMandatoryFieldsMissingTestCase01()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T06:00:06 EST" name="createAccWithMandatoryFieldsMissingTestCase01" finished-at="2024-02-12T06:00:08 EST" duration-ms="1800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccWithMandatoryFieldsMissingTestCase01 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T06:00:08 EST" name="closeDriver" finished-at="2024-02-12T06:00:08 EST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T06:00:08 EST" name="launchApplication" finished-at="2024-02-12T06:00:18 EST" duration-ms="9921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createAccWithPasswordandConfirmPasswordMissmatchTestCase02()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T06:00:18 EST" name="createAccWithPasswordandConfirmPasswordMissmatchTestCase02" finished-at="2024-02-12T06:00:21 EST" duration-ms="3085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccWithPasswordandConfirmPasswordMissmatchTestCase02 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@39529185]" started-at="2024-02-12T06:00:21 EST" name="closeDriver" finished-at="2024-02-12T06:00:21 EST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- EcommerceProject.tests.TestCreateNewCustomerAcc -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

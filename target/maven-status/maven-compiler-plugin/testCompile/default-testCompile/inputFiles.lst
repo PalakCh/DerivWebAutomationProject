@@ -1,6 +1,7 @@
-G:\eclipse-workspace\LearnFramework2\src\test\java\Cucumber\TestNGTestRunner.java
-G:\eclipse-workspace\LearnFramework2\src\test\java\LearnFramework2\testcomponents\baseTest.java
-G:\eclipse-workspace\LearnFramework2\src\test\java\LearnFramework2\testcomponents\Listeners.java
-G:\eclipse-workspace\LearnFramework2\src\test\java\LearnFramework2\tests\Ecommerce.java
-G:\eclipse-workspace\LearnFramework2\src\test\java\LearnFramework2\tests\ErrorValidation.java
-G:\eclipse-workspace\LearnFramework2\src\test\java\StepDefinitions\StepDefinitionImpl.java
+G:\eclipse-workspace\EcommerceProject\src\test\java\EcommerceProject\testcomponents\baseTest.java
+G:\eclipse-workspace\EcommerceProject\src\test\java\EcommerceProject\testcomponents\Listeners.java
+G:\eclipse-workspace\EcommerceProject\src\test\java\EcommerceProject\tests\TestAddItemsToWishlist.java
+G:\eclipse-workspace\EcommerceProject\src\test\java\EcommerceProject\tests\TestCreateNewCustomerAcc.java
+G:\eclipse-workspace\EcommerceProject\src\test\java\EcommerceProject\tests\TestFilterSortFunctionality.java
+G:\eclipse-workspace\EcommerceProject\src\test\java\EcommerceProject\tests\TestQuickAddToCart.java
+G:\eclipse-workspace\EcommerceProject\src\test\java\EcommerceProject\tests\TestSignInFunctionality.java

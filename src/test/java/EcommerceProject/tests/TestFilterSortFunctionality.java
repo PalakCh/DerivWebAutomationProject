@@ -2,6 +2,7 @@ package EcommerceProject.tests;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -16,46 +17,50 @@ import org.testng.annotations.Test;
 import EcommerceProject.PageObjects.LumaEcommerceCreateNewAccPage;
 import EcommerceProject.PageObjects.LumaEcommerceCustomerLoginPage;
 import EcommerceProject.PageObjects.LumaEcommerceHomePage;
+import EcommerceProject.PageObjects.LumaProductPage;
 import EcommerceProject.PageObjects.LunaCartPage;
 import EcommerceProject.PageObjects.LunaWishlistPage;
 import EcommerceProject.testcomponents.baseTest;
 
-public class testAddItemsToWishlist extends baseTest{
+public class TestFilterSortFunctionality extends baseTest{
 	
 	@Test
-	public void validateAddItemsToWishlist() throws IOException, InterruptedException
+	public void validateFilter() throws IOException, InterruptedException
 	{
-		String producttitle="Radiant Tee";
+		
+		LumaEcommerceCustomerLoginPage clp=lp.SignIn();
+		clp.enteremail(getPropertyValue("email"));
+		clp.enterpassword(getPropertyValue("password"));
+		LumaEcommerceHomePage hp=clp.signIn();
+		hp.ValidateuserloggedIn();
+		
+		LumaProductPage pp =hp.goToWomensJackets();
+		String filtercount=pp.selectfilter("Style","Insulated");
+		Assert.assertEquals(filtercount, pp.countfilteritems());	
+	
+		hp.signOut();
+		
+	}
 
-		
-		LumaEcommerceCustomerLoginPage clp=lp.SignIn();
-		clp.enteremail(getPropertyValue("email"));
-		clp.enterpassword(getPropertyValue("password"));
-		LumaEcommerceHomePage hp=clp.signIn();
-		hp.ValidateuserloggedIn();
-		LunaWishlistPage wp =hp.addItemToWishlist(producttitle);
-		wp.validateItemsInWishlist(producttitle);
-		
-	
-		hp.signOut();
-		
-	}
 	@Test
-	public void removeItemsToWishlist() throws IOException, InterruptedException
+	public void validateSort() throws IOException, InterruptedException
 	{
-		String producttitle="Radiant Tee";
 		
 		LumaEcommerceCustomerLoginPage clp=lp.SignIn();
 		clp.enteremail(getPropertyValue("email"));
 		clp.enterpassword(getPropertyValue("password"));
 		LumaEcommerceHomePage hp=clp.signIn();
 		hp.ValidateuserloggedIn();
-		LunaWishlistPage wp =hp.gotowishlist();
-		wp.removeItemsfromWishlist(producttitle);		
+		
+		LumaProductPage pp =hp.goToWomensJackets();
+		ArrayList<String> expectedproductnames=pp.getAllProductNamesAndSort();
+		pp.selectsort("Product Name");
+		ArrayList<String> actualproductnames=pp.getSortedProductNames();
+		Assert.assertEquals(expectedproductnames, actualproductnames);
 	
 		hp.signOut();
 		
 	}
-	
+
 	
 }

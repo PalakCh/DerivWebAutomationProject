@@ -19,7 +19,7 @@ import EcommerceProject.PageObjects.LumaEcommerceHomePage;
 import EcommerceProject.PageObjects.LunaCartPage;
 import EcommerceProject.testcomponents.baseTest;
 
-public class testQuickAddToCart extends baseTest{
+public class TestQuickAddToCart extends baseTest{
 	
 	@Test
 	public void validateQuickAddToCartSingleItem() throws IOException, InterruptedException

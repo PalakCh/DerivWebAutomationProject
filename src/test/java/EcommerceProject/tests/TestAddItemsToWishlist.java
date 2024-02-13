@@ -16,29 +16,46 @@ import org.testng.annotations.Test;
 import EcommerceProject.PageObjects.LumaEcommerceCreateNewAccPage;
 import EcommerceProject.PageObjects.LumaEcommerceCustomerLoginPage;
 import EcommerceProject.PageObjects.LumaEcommerceHomePage;
+import EcommerceProject.PageObjects.LunaCartPage;
+import EcommerceProject.PageObjects.LunaWishlistPage;
 import EcommerceProject.testcomponents.baseTest;
 
-public class testSignInFunctionality extends baseTest{
-	
-	
-	@Test
-	public void loginWithInvalidCredentials() throws IOException
-	{
-		LumaEcommerceCustomerLoginPage clp=lp.SignIn();
-		clp.enteremail(getPropertyValue("email"));
-		clp.enterpassword("dfbjsbkfd");
-		clp.signIn();
-		clp.validateIncorrectSignInMessage();
-	}
+public class TestAddItemsToWishlist extends baseTest{
 	
 	@Test
-	public void loginWithValidCredentials() throws IOException
+	public void validateAddItemsToWishlist() throws IOException, InterruptedException
 	{
+		String producttitle="Radiant Tee";
+
+		
 		LumaEcommerceCustomerLoginPage clp=lp.SignIn();
 		clp.enteremail(getPropertyValue("email"));
 		clp.enterpassword(getPropertyValue("password"));
 		LumaEcommerceHomePage hp=clp.signIn();
 		hp.ValidateuserloggedIn();
-		hp.signOut();	
+		LunaWishlistPage wp =hp.addItemToWishlist(producttitle);
+		wp.validateItemsInWishlist(producttitle);
+		
+	
+		hp.signOut();
+		
 	}
+	@Test
+	public void removeItemsToWishlist() throws IOException, InterruptedException
+	{
+		String producttitle="Radiant Tee";
+		
+		LumaEcommerceCustomerLoginPage clp=lp.SignIn();
+		clp.enteremail(getPropertyValue("email"));
+		clp.enterpassword(getPropertyValue("password"));
+		LumaEcommerceHomePage hp=clp.signIn();
+		hp.ValidateuserloggedIn();
+		LunaWishlistPage wp =hp.gotowishlist();
+		wp.removeItemsfromWishlist(producttitle);		
+	
+		hp.signOut();
+		
+	}
+	
+	
 }

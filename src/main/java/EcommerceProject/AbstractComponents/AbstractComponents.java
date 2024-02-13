@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import EcommerceProject.PageObjects.CartPage;
+
 import EcommerceProject.PageObjects.LunaCartPage;
 import EcommerceProject.PageObjects.OrdersPage;
 

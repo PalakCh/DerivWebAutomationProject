@@ -17,7 +17,7 @@ import EcommerceProject.PageObjects.LumaEcommerceCreateNewAccPage;
 import EcommerceProject.PageObjects.LumaEcommerceHomePage;
 import EcommerceProject.testcomponents.baseTest;
 
-public class testCreateNewCustomerAcc extends baseTest{
+public class TestCreateNewCustomerAcc extends baseTest{
 	
 	
 	@Test
