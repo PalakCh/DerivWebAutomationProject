@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-07T06:24:04 EST" name="Default suite" finished-at="2024-02-07T06:24:20 EST" duration-ms="16423">
+  <suite started-at="2024-02-14T06:34:54 EST" name="Suite" finished-at="2024-02-14T06:35:54 EST" duration-ms="60313">
     <groups>
     </groups>
-    <test started-at="2024-02-07T06:24:04 EST" name="Default test" finished-at="2024-02-07T06:24:20 EST" duration-ms="16423">
-      <class name="EcommerceProject.tests.testFilterSortFunctionality">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EcommerceProject.tests.testFilterSortFunctionality@1b2abca6]" started-at="2024-02-07T06:24:04 EST" name="launchApplication" finished-at="2024-02-07T06:24:10 EST" duration-ms="6574" status="PASS">
+    <test started-at="2024-02-14T06:34:54 EST" name="Test" finished-at="2024-02-14T06:35:54 EST" duration-ms="60313">
+      <class name="EcommerceProject.tests.TestCreateNewCustomerAcc">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:34:54 EST" name="launchApplication" finished-at="2024-02-14T06:35:11 EST" duration-ms="17276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="validateSort()[pri:0, instance:EcommerceProject.tests.testFilterSortFunctionality@1b2abca6]" started-at="2024-02-07T06:24:10 EST" name="validateSort" finished-at="2024-02-07T06:24:20 EST" duration-ms="9675" status="PASS">
+        <test-method signature="createAccWithAllFieldsCorrectlyTestCase04()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:11 EST" name="createAccWithAllFieldsCorrectlyTestCase04" finished-at="2024-02-14T06:35:16 EST" duration-ms="4718" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSort -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:EcommerceProject.tests.testFilterSortFunctionality@1b2abca6]" started-at="2024-02-07T06:24:20 EST" name="closeDriver" finished-at="2024-02-07T06:24:20 EST" duration-ms="135" status="PASS">
+        </test-method> <!-- createAccWithAllFieldsCorrectlyTestCase04 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:16 EST" name="closeDriver" finished-at="2024-02-14T06:35:16 EST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- EcommerceProject.tests.testFilterSortFunctionality -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:16 EST" name="launchApplication" finished-at="2024-02-14T06:35:25 EST" duration-ms="9190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createAccWithAlreadyUsedEmailIdTestCase03()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:25 EST" name="createAccWithAlreadyUsedEmailIdTestCase03" finished-at="2024-02-14T06:35:29 EST" duration-ms="4060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccWithAlreadyUsedEmailIdTestCase03 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:29 EST" name="closeDriver" finished-at="2024-02-14T06:35:29 EST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:29 EST" name="launchApplication" finished-at="2024-02-14T06:35:39 EST" duration-ms="9944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createAccWithMandatoryFieldsMissingTestCase01()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:39 EST" name="createAccWithMandatoryFieldsMissingTestCase01" finished-at="2024-02-14T06:35:42 EST" duration-ms="2497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccWithMandatoryFieldsMissingTestCase01 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:42 EST" name="closeDriver" finished-at="2024-02-14T06:35:42 EST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:42 EST" name="launchApplication" finished-at="2024-02-14T06:35:51 EST" duration-ms="9462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="createAccWithPasswordandConfirmPasswordMissmatchTestCase02()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:51 EST" name="createAccWithPasswordandConfirmPasswordMissmatchTestCase02" finished-at="2024-02-14T06:35:54 EST" duration-ms="2514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccWithPasswordandConfirmPasswordMissmatchTestCase02 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:EcommerceProject.tests.TestCreateNewCustomerAcc@7582ff54]" started-at="2024-02-14T06:35:54 EST" name="closeDriver" finished-at="2024-02-14T06:35:54 EST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- EcommerceProject.tests.TestCreateNewCustomerAcc -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -5,14 +5,10 @@
 <listeners>
 <listener class-name="EcommerceProject.testcomponents.Listeners"/>
 </listeners>
-
   <test thread-count="5" name="Test">
     <classes>
       <class name="EcommerceProject.tests.TestCreateNewCustomerAcc"/>
-      <class name="EcommerceProject.tests.TestSignInFunctionality"/>
-      <class name="EcommerceProject.tests.TestFilterSortFunctionality"/>
-      <class name="EcommerceProject.tests.TestQuickAddToCart"/>
-      <class name="EcommerceProject.tests.TestAddItemsToWishlist"/>
+
 
     </classes>
   </test> <!-- Test -->
