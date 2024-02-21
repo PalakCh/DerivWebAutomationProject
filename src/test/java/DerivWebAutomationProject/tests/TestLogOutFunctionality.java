@@ -29,6 +29,7 @@ public class TestLogOutFunctionality extends baseTest{
 		OrangeHrmLogInPage lp1=hpp.logOut();
 		lp1.validateLoginPage();
 		
+	
 	}
 	
 	
