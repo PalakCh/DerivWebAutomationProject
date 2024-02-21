@@ -8,8 +8,8 @@ TestLogOutFunctionality
 
 #Reports
 Reports are generated in DerivWebAutomationProject\reports
-index.html is the report generated
-Any failure screenshots will be generated in this folder
+index.html is the report generated.
+Any failure screenshots will be generated in this folder.
 
 #Executable JAR
 Executable JAR file is in DerivWebAutomationProject\target
