@@ -1,7 +1,5 @@
-EcommerceProject\tests\TestAddItemsToWishlist.class
-EcommerceProject\tests\TestFilterSortFunctionality.class
-EcommerceProject\tests\TestCreateNewCustomerAcc.class
-EcommerceProject\tests\TestQuickAddToCart.class
-EcommerceProject\testcomponents\baseTest.class
-EcommerceProject\testcomponents\Listeners.class
-EcommerceProject\tests\TestSignInFunctionality.class
+DerivWebAutomationProject\testcomponents\Listeners.class
+DerivWebAutomationProject\tests\TestMyInfoFunctionality.class
+DerivWebAutomationProject\tests\TestLogInFunctionality.class
+DerivWebAutomationProject\tests\TestLogOutFunctionality.class
+DerivWebAutomationProject\testcomponents\baseTest.class

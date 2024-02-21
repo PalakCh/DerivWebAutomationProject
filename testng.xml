@@ -3,17 +3,14 @@
 <suite name="Suite">
 
 <listeners>
-<listener class-name="EcommerceProject.testcomponents.Listeners"/>
+<listener class-name="DerivWebAutomationProject.testcomponents.Listeners"/>
 </listeners>
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="EcommerceProject.tests.TestCreateNewCustomerAcc"/>
-      <class name="EcommerceProject.tests.TestSignInFunctionality"/>
-      <class name="EcommerceProject.tests.TestFilterSortFunctionality"/>
-      <class name="EcommerceProject.tests.TestQuickAddToCart"/>
-      <class name="EcommerceProject.tests.TestAddItemsToWishlist"/>
-
+      <class name="DerivWebAutomationProject.tests.TestMyInfoFunctionality"/>
+      <class name="DerivWebAutomationProject.tests.TestLogOutFunctionality"/>
+      <class name="DerivWebAutomationProject.tests.TestLogInFunctionality"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
